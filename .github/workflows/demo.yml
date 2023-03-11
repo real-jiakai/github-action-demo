@@ -1,0 +1,18 @@
+# github workflow名字
+name: my first workflow
+# 如何去控制workflow触发的trigger
+# workflow可以手动去出发
+on: workflow_dispatch
+
+jobs:
+  # job名字
+  build:
+    # 运行的环境
+    runs-on: ubuntu-latest
+    # 具体的step
+    steps:
+      - name: Run a multi-line script
+        # |表示后面有多行的命令要去执行
+        run: |
+          echo "hello github actions"
+          date
