@@ -18,7 +18,7 @@ jobs:
         # |表示后面有多行的命令要去执行
         run: |
           echo "hello github actions"
-          date1
+          date
   
   build_on_windows:
     runs-on: windows-latest
