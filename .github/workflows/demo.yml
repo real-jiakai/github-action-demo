@@ -6,7 +6,7 @@ on: workflow_dispatch
 
 jobs:
   # job名字
-  build:
+  build_on_linux:
     # 运行的环境
     runs-on: ubuntu-latest
     # 具体的step
@@ -16,3 +16,12 @@ jobs:
         run: |
           echo "hello github actions"
           date
+  
+  build_on_windows:
+    runs_on: windows-latest
+    setps:
+      - name: Run a multi-line script
+      run: |
+      echo "hello github actions"
+      Get-Date
+
