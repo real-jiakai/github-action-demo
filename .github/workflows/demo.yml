@@ -19,7 +19,7 @@ jobs:
   
   build_on_windows:
     runs_on: windows-latest
-    setps:
+    steps:
       - name: Run a multi-line script
       run: |
       echo "hello github actions"
